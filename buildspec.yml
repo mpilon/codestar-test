@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - echo Testing pre-build phase...
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Build your stuff here...   
+      - sudo npm install gulp-cli
+      -  
+  post_build:
+    commands:
+      - echo Build completed on `date`
